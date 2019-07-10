@@ -2,10 +2,12 @@
     <head>
         <link rel="stylesheet" type="text/css" href= "css/HTMLTest.css">
         <link rel="stylesheet" type="text/css" href= "css/background.css">
-        <script type="text/javascript" src="js/HTMLTest.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/swiper.css">
     </head>
 
     <body>
+
+        
         <div class="area" >
             <ul class="circles">
                 <li></li>
@@ -18,12 +20,42 @@
                 <li></li>
                 <li></li>
                 <li></li>
+                <li></li>
             </ul>
         </div>
+        
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+
+
         <div class="closeimg">
             <a href="#">
-                <img src="imgs/close1.png" onclick="window.close()" onmouseover="this.src='imgs/close2.png'" onmouseout="this.src='imgs/close1.png'" />
+                    <img src="imgs/close1.png" onclick="window.close()" onmouseout="this.src='imgs/close1.png'" />
             </a>
         </div>
+
+        <script type="text/javascript" src="js/swiper.js"></script>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {  //ページネーション設定
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+                loop: true,
+            });
+        </script>
     </body>
 </html>

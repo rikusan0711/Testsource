@@ -5,9 +5,26 @@ body{
 
 .closeimg{
     position: absolute;
-    width:80px;
-    height:90px;
+    width:43px;
+    height:51px;
     top :10px;
-    right: -10px;
-    
+    right: 20px;
+    background: url(../imgs/close1.png);
+}
+a:hover{
+    position: absolute;
+    background: url(../imgs/close2.png);
+    animation-name: close_animate;
+    animation-duration: 0.5s;
+}
+@keyframes close_animate {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
 }
