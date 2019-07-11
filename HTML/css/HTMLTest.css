@@ -60,3 +60,42 @@ body{
     }
 
 }
+
+/*カラー変更ボタン*/
+.chanegcolor1{
+    position: absolute;
+    width:25px;
+    height:25px;
+    top :5px;
+    left: 5px;
+    background: url(../imgs/backcolor1.png);
+}
+.chanegcolor1:hover{
+    position: absolute;
+    background: url(../imgs/backcolor1S.png);
+}
+
+.chanegcolor2{
+    position: absolute;
+    width:25px;
+    height:25px;
+    top :5px;
+    left: 35px;
+    background: url(../imgs/backcolor2.png);
+}
+.chanegcolor2:hover{
+    position: absolute;
+    background: url(../imgs/backcolor2S.png);
+}
+.chanegcolor3{
+    position: absolute;
+    width:25px;
+    height:25px;
+    top :5px;
+    left: 65px;
+    background: url(../imgs/backcolor3.png);
+}
+.chanegcolor3:hover{
+    position: absolute;
+    background: url(../imgs/backcolor3S.png);
+}
